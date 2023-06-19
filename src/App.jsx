@@ -6,15 +6,18 @@ import Jeanette from "./components/Jeanette"
 import Patrick from "./components/Patrick"
 import Kira from "./components/Kira"
 
+
+
 function App() {
 
   return (
     <div className='main'>
       <Daniel />
       <Jonathan />
-      <Kira />
-      <Patrick />
       <Jeanette />
+      <Patrick />
+      <Kira />
+      
     </div>
   )
 }

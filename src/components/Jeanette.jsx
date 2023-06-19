@@ -1,23 +1,20 @@
+import image2 from "./assets/image-jeanette.jpg"
+
 function Jeanette(){
     return(
-        <div className="white">
-            <div className="content">
-                <div className="navbar">
-            <img src="./assets/image-jeanette.jpg" className="jeanette--image"/>
-            <div className="titles">
-                <h3 className="name" >Jeanette Harmon</h3>
-                <h4 className="extra--info">Verified Graduate</h4>
-            </div>
+        <div className=" card white">
+           <div class="author">
+          <img src={image2} alt="" class="user" />
+          <div>
+            <h2 class="name dark">Jeanette Harmon</h2>
+            <h2 class="status dark">Verified Graduate</h2>
           </div>
-            <div className="descriptions--jonathan">
-                <p className="description">
-                An overall wonderful and rewarding experience
-                </p>
-                <p className="extra--description">
-                “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
-                </p>
-              </div>
-            </div>
+        </div>
+        <p class="info dark">An overall wonderful and rewarding experience</p>
+        <p class="description dark">
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
         </div>
     )
 }

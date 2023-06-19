@@ -5,22 +5,35 @@
 }
 
 body{
-  background-color: aqua;
   width: 100vw;
-  height: 100vh;
-  font-family: 'Barlow Semi Condensed';
-  padding: 71px 24px;
-  /* display: flex;
-  flex-direction: row;
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; */
+  padding: 165px 164px;
+  
 }
 
 .main{
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
   grid-template-columns: auto;
   row-gap: 24px;
   column-gap: 30px;
+  grid-template-columns: repeat(4, 255px);
+
 }
+
+@media (min-width: 375px){
+  body{
+    padding: 71px 24px;
+  }
+
+  .main{
+  grid-template-columns: auto;
+  row-gap: 24px;
+  column-gap: 30px;
+  }
+}
+
